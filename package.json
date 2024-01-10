@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio configs/wdio.chrome.conf.js --cucumberOpts.tagExpression='@automated'",
+    "test": "npx wdio ./wdio.conf.js",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
