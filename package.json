@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx wdio configs/wdio.chrome.conf.js --cucumberOpts.tagExpression='@automated'",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
@@ -17,5 +17,8 @@
     "@wdio/spec-reporter": "^8.18.1",
     "chromedriver": "^118.0.1",
     "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "chmod": "^0.2.1"
   }
 }
